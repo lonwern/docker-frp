@@ -2,11 +2,15 @@
 
 Docker containers for [fatedier/frp](https://github.com/fatedier/frp).
 
-## Usages of frps
+## Usage of frps
+
+- get help
 
 ```console
 $ docker run --rm lonwern/frps --help
 ```
+
+- start
 
 ```console
 $ docker run -d --name some-fprs \
@@ -14,11 +18,15 @@ $ docker run -d --name some-fprs \
     lonwern/frps -c /conf/frps.ini
 ```
 
-## Usages of frpc
+## Usage of frpc
+
+- get help
 
 ```console
 $ docker run --rm lonwern/frpc --help
 ```
+
+- start
 
 ```console
 $ docker run -d --name some-fprc \

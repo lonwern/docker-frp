@@ -4,13 +4,13 @@ Docker containers for [fatedier/frp](https://github.com/fatedier/frp).
 
 ## Usage of frps
 
-- get help
+- Get help
 
 ```console
 $ docker run --rm lonwern/frps --help
 ```
 
-- start
+- Start server
 
 ```console
 $ docker run -d --name some-fprs \
@@ -20,13 +20,13 @@ $ docker run -d --name some-fprs \
 
 ## Usage of frpc
 
-- get help
+- Get help
 
 ```console
 $ docker run --rm lonwern/frpc --help
 ```
 
-- start
+- Start client
 
 ```console
 $ docker run -d --name some-fprc \

@@ -9,3 +9,4 @@ RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_$
 
 WORKDIR /frpc
 ENTRYPOINT ["./frpc"]
+CMD ["-c", "./frpc.ini"]

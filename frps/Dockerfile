@@ -9,3 +9,4 @@ RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_$
 
 WORKDIR /frps
 ENTRYPOINT ["./frps"]
+CMD ["-c", "./frps.ini"]

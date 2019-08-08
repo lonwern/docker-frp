@@ -1,6 +1,6 @@
 # About
 
-Docker containers for [fatedier/frp](https://github.com/fatedier/frp).
+Docker images for [fatedier/frp](https://github.com/fatedier/frp).
 
 ## Usage of frps
 

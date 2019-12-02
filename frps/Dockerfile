@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV FRP_VERSION 0.29.1
+ENV FRP_VERSION 0.30.0
 RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_amd64.tar.gz \
     && tar -xf frp_${FRP_VERSION}_linux_amd64.tar.gz \
     && mkdir /frps \
@@ -8,5 +8,5 @@ RUN wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_$
     && rm -rf frp_${FRP_VERSION}_linux_amd64*
 
 WORKDIR /frps
-ENTRYPOINT ["./frps"]
-CMD ["-c", "./frps.ini"]
+ENTRYPOINT ["/frps/frps"]
+CMD ["-c", "frps.ini"]

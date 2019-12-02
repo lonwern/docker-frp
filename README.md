@@ -14,8 +14,8 @@ $ docker run --rm lonwern/frps --help
 
 ```console
 $ docker run -d --name some-fprs \
-    -v /some/conf:/conf \
-    lonwern/frps -c /conf/frps.ini
+    -v /path/to/frps.ini:/frps/frps.ini \
+    lonwern/frps -c /frps/frps.ini
 ```
 
 ## Usage of frpc
@@ -30,6 +30,6 @@ $ docker run --rm lonwern/frpc --help
 
 ```console
 $ docker run -d --name some-fprc \
-    -v /some/conf:/conf \
-    lonwern/frpc -c /conf/frpc.ini
+    -v /path/to/fprc.ini:/fprc/fprc.ini \
+    lonwern/fprc -c /fprc/fprc.ini
 ```
